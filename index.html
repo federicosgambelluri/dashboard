@@ -1,43 +1,49 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>FS - Project Dashboard</title>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#1173d4",
-              "background-light": "#f6f7f8",
-              "background-dark": "#101922",
-            },
-            fontFamily: {
-              "display": ["Inter"]
-            },
-            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+<html class="dark" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>FS - Project Dashboard</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
           },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
         },
-      }
-    </script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="flex flex-col min-h-screen">
-<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex items-center justify-between h-16">
-<div class="flex items-center gap-4">
-<div class="text-primary size-7">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path></svg>
-</div>
-<h1 class="text-xl font-bold text-gray-900 dark:text-white">Federico Sgambelluri</h1>
-</div>
-<!--  
+  <div class="flex flex-col min-h-screen">
+    <header
+      class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-4">
+            <div class="text-primary size-7">
+              <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path>
+              </svg>
+            </div>
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">Federico Sgambelluri</h1>
+          </div>
+          <!--  
 <nav class="hidden md:flex items-center gap-8">
 <a class="text-sm font-medium text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors" href="#">Dashboard</a>
 <a class="text-sm font-medium text-primary dark:text-primary" href="#">Projects</a>
@@ -45,143 +51,177 @@
 </nav>
 -->
 
-<div class="flex items-center gap-4">
-<button class="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">
-<span class="material-symbols-outlined">menu</span>
-</button>
-<!--<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4lJTHXdH0LIDWKvwgZR3Qiy19EYmbo5G9ZmaybczTxwb54hC1mg-dSlZ9DQvhdMJay8Yl5wJ86qavMGamyrSqYkRewSs25V9heelemAt7l8FdRv1dwpP41R8olV2bAIsa0A-0aYJCV3NdWt7Yl2hHPsyuCuST2wMEoWqcOjpaKnG9d1Jbaw2pZ3PKu91nikWDIh4ppo9CBjEHnk-Ioo6LeXo2dn7fhnF1RkGOAxhfF6pqyF8c2-bN5ENn9gulCIXSZSxVEME9Vew");'></div>-->
-</div>
-</div>
-</div>
-</header>
-<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
-<div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
-<h2 class="text-3xl font-bold text-gray-900 dark:text-white">My Projects</h2>
-<!--
+          <div class="flex items-center gap-4">
+            <button
+              class="md:hidden p-2 rounded-md text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-800">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+            <!--<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA4lJTHXdH0LIDWKvwgZR3Qiy19EYmbo5G9ZmaybczTxwb54hC1mg-dSlZ9DQvhdMJay8Yl5wJ86qavMGamyrSqYkRewSs25V9heelemAt7l8FdRv1dwpP41R8olV2bAIsa0A-0aYJCV3NdWt7Yl2hHPsyuCuST2wMEoWqcOjpaKnG9d1Jbaw2pZ3PKu91nikWDIh4ppo9CBjEHnk-Ioo6LeXo2dn7fhnF1RkGOAxhfF6pqyF8c2-bN5ENn9gulCIXSZSxVEME9Vew");'></div>-->
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white">My Projects</h2>
+        <!--
 <button class="flex items-center gap-2 bg-primary text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors">
 <span class="material-symbols-outlined text-base">add</span>
             New Project
           </button>
         -->
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/tech.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Inventario Tech</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web application for managing personal object.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/InventarioTech/">
-                View Project
-              </a>
-</div>
-</div>
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/diet.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Smart Diet</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A mobile app for tracking food activities.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/Diet/">
-                View Project
-              </a>
-</div>
-</div>
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/cv.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">CV</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">Federico Sgambelluri personal CV</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/CurriculumVitae/">
-                View Project
-              </a>
-</div>
-</div>
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/bostarter.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">BOStarter</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web platform like kikstarter.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://github.com/peppeee24/BoStarter">
-                View Project
-              </a>
-</div>
-</div>
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/sweng.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Sweng</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A mobile smart note app.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://github.com/peppeee24/SWENG">
-                View Project
-              </a>
-</div>
-</div>
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/tc.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Travel Companion</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">An Android application for track your travel.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://github.com/federicosgambelluri/ProgettoLAM">
-                View Project
-              </a>
-</div>
-</div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/tech.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Inventario Tech</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web application for managing
+              personal object.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/InventarioTech/">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/diet.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Smart Diet</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A mobile app for tracking food
+              activities.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/Diet/">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/cv.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">CV</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">Federico Sgambelluri personal CV</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/CurriculumVitae/">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/bostarter.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">BOStarter</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web platform like kikstarter.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://github.com/peppeee24/BoStarter">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/sweng.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Sweng</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A mobile smart note app.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://github.com/peppeee24/SWENG">
+              View Project
+            </a>
+          </div>
+        </div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/tc.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Travel Companion</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">An Android application for track
+              your travel.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="img/TravelCompanion.apk" download>
+              Download
+            </a>
+          </div>
+        </div>
 
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/found.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">iFoundIT</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web app to help you to find lost items.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/iFoundIT/">
-                View Project
-              </a>
-</div>
-</div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/found.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">iFoundIT</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">A web app to help you to find lost
+              items.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/iFoundIT/">
+              View Project
+            </a>
+          </div>
+        </div>
 
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("https://content.meteoblue.com/assets/images/graphics/daily-forecast_EN_lightbox.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">All Wheater</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">All the whater services in all places.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://github.com/federicosgambelluri/All-Weather">
-                View Project
-              </a>
-</div>
-</div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover"
+            style='background-image: url("https://content.meteoblue.com/assets/images/graphics/daily-forecast_EN_lightbox.png");'>
+          </div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">All Wheater</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">All the whater services in all
+              places.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://github.com/federicosgambelluri/All-Weather">
+              View Project
+            </a>
+          </div>
+        </div>
 
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/card.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Vocabulary Card</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">Simple card to learn a new Enligh word every day.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/Vocabulary-Cards/">
-                View Project
-              </a>
-</div>
-</div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/card.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Vocabulary Card</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">Simple card to learn a new Enligh
+              word every day.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/Vocabulary-Cards/">
+              View Project
+            </a>
+          </div>
+        </div>
 
-      <div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/lp.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">LP Library</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">My personal LP Library</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://federicosgambelluri.github.io/LP-Library/">
-                View Project
-              </a>
-</div>
-</div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/lp.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">LP Library</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">My personal LP Library</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://federicosgambelluri.github.io/LP-Library/">
+              View Project
+            </a>
+          </div>
+        </div>
 
-<div class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
-<div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/vap.png");'></div>
-<div class="p-4 flex flex-col flex-grow">
-<h3 class="font-bold text-lg text-gray-900 dark:text-white">Vintage Automotive Parts</h3>
-<p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">My fist job, a markeplace for WWII spare parts.</p>
-<a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors" href="https://www.vintageautomotiveparts.com">
-                View Project
-              </a>
-</div>
-</div>
-</div>
-</main>
-</div>
+        <div
+          class="flex flex-col bg-white dark:bg-gray-900/50 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden group transition-all hover:shadow-lg hover:-translate-y-1">
+          <div class="w-full h-40 bg-center bg-cover" style='background-image: url("img/vap.png");'></div>
+          <div class="p-4 flex flex-col flex-grow">
+            <h3 class="font-bold text-lg text-gray-900 dark:text-white">Vintage Automotive Parts</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-1 mb-4 flex-grow">My fist job, a markeplace for WWII
+              spare parts.</p>
+            <a class="mt-auto w-full text-center bg-primary/10 dark:bg-primary/20 text-primary py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors"
+              href="https://www.vintageautomotiveparts.com">
+              View Project
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
 
-</body></html>
+</body>
+
+</html>
